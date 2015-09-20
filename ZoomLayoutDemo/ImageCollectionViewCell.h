@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageCollectionViewCell.h
 //  ZoomLayoutDemo
 //
 //  Created by 臧其龙 on 15/9/20.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UICollectionView *mCollectionView;
+@interface ImageCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
-

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-lC-phx">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <collectionViewLayout key="collectionViewLayout" id="RRY-PX-MvM"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kImageCollectionViewCellID" id="ULG-vm-4h3" customClass="ImageCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="283"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="265" height="283"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-i2-jm1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="265" height="283"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="iKD-i2-jm1" secondAttribute="bottom" id="3AT-7H-Ehh"/>
+                                            <constraint firstAttribute="trailing" secondItem="iKD-i2-jm1" secondAttribute="trailing" id="FMv-o4-F1j"/>
+                                            <constraint firstItem="iKD-i2-jm1" firstAttribute="top" secondItem="ULG-vm-4h3" secondAttribute="top" id="lNU-Pl-3CQ"/>
+                                            <constraint firstItem="iKD-i2-jm1" firstAttribute="leading" secondItem="ULG-vm-4h3" secondAttribute="leading" id="wYZ-dH-5aR"/>
+                                        </constraints>
+                                        <size key="customSize" width="265" height="283"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="iKD-i2-jm1" id="eJa-b3-O5U"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wtE-m8-5S8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vrF-Ge-RIF"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Tb-lC-phx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0BV-Ot-xcD"/>
+                            <constraint firstAttribute="trailing" secondItem="6Tb-lC-phx" secondAttribute="trailing" id="GJZ-Bj-8b7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Tb-lC-phx" secondAttribute="bottom" id="fFe-fa-8dY"/>
+                            <constraint firstItem="6Tb-lC-phx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qwQ-Ew-r9B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mCollectionView" destination="6Tb-lC-phx" id="ldf-Vd-MbB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
 </document>

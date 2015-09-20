@@ -15,6 +15,11 @@
 		402EF93B1BAF0774000DEF43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402EF9391BAF0774000DEF43 /* LaunchScreen.storyboard */; };
 		402EF9461BAF0775000DEF43 /* ZoomLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 402EF9451BAF0775000DEF43 /* ZoomLayoutDemoTests.m */; };
 		402EF9511BAF0775000DEF43 /* ZoomLayoutDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 402EF9501BAF0775000DEF43 /* ZoomLayoutDemoUITests.m */; };
+		402EF9601BAF0780000DEF43 /* TemplateFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 402EF95F1BAF0780000DEF43 /* TemplateFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
+		402EF9631BAF0814000DEF43 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 402EF9621BAF0814000DEF43 /* ImageCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		402EF9671BAF08F5000DEF43 /* wuyanzu2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 402EF9641BAF08F5000DEF43 /* wuyanzu2.jpg */; settings = {ASSET_TAGS = (); }; };
+		402EF9681BAF08F5000DEF43 /* wuyanzu1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 402EF9651BAF08F5000DEF43 /* wuyanzu1.jpg */; settings = {ASSET_TAGS = (); }; };
+		402EF96B1BAF0AAD000DEF43 /* wuyanzu0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 402EF96A1BAF0AAD000DEF43 /* wuyanzu0.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		402EF94C1BAF0775000DEF43 /* ZoomLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		402EF9501BAF0775000DEF43 /* ZoomLayoutDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomLayoutDemoUITests.m; sourceTree = "<group>"; };
 		402EF9521BAF0775000DEF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402EF95E1BAF0780000DEF43 /* TemplateFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFlowLayout.h; sourceTree = "<group>"; };
+		402EF95F1BAF0780000DEF43 /* TemplateFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFlowLayout.m; sourceTree = "<group>"; };
+		402EF9611BAF0814000DEF43 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		402EF9621BAF0814000DEF43 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		402EF9641BAF08F5000DEF43 /* wuyanzu2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu2.jpg; sourceTree = "<group>"; };
+		402EF9651BAF08F5000DEF43 /* wuyanzu1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu1.jpg; sourceTree = "<group>"; };
+		402EF96A1BAF0AAD000DEF43 /* wuyanzu0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu0.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,13 @@
 				402EF92F1BAF0774000DEF43 /* AppDelegate.m */,
 				402EF9311BAF0774000DEF43 /* ViewController.h */,
 				402EF9321BAF0774000DEF43 /* ViewController.m */,
+				402EF9611BAF0814000DEF43 /* ImageCollectionViewCell.h */,
+				402EF9621BAF0814000DEF43 /* ImageCollectionViewCell.m */,
+				402EF95E1BAF0780000DEF43 /* TemplateFlowLayout.h */,
+				402EF95F1BAF0780000DEF43 /* TemplateFlowLayout.m */,
+				402EF9641BAF08F5000DEF43 /* wuyanzu2.jpg */,
+				402EF9651BAF08F5000DEF43 /* wuyanzu1.jpg */,
+				402EF96A1BAF0AAD000DEF43 /* wuyanzu0.jpg */,
 				402EF9341BAF0774000DEF43 /* Main.storyboard */,
 				402EF9371BAF0774000DEF43 /* Assets.xcassets */,
 				402EF9391BAF0774000DEF43 /* LaunchScreen.storyboard */,
@@ -243,7 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402EF9681BAF08F5000DEF43 /* wuyanzu1.jpg in Resources */,
 				402EF93B1BAF0774000DEF43 /* LaunchScreen.storyboard in Resources */,
+				402EF9671BAF08F5000DEF43 /* wuyanzu2.jpg in Resources */,
+				402EF96B1BAF0AAD000DEF43 /* wuyanzu0.jpg in Resources */,
 				402EF9381BAF0774000DEF43 /* Assets.xcassets in Resources */,
 				402EF9361BAF0774000DEF43 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				402EF9331BAF0774000DEF43 /* ViewController.m in Sources */,
+				402EF9601BAF0780000DEF43 /* TemplateFlowLayout.m in Sources */,
+				402EF9631BAF0814000DEF43 /* ImageCollectionViewCell.m in Sources */,
 				402EF9301BAF0774000DEF43 /* AppDelegate.m in Sources */,
 				402EF92D1BAF0774000DEF43 /* main.m in Sources */,
 			);
